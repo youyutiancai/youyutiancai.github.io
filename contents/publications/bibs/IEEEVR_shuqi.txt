@@ -1,0 +1,8 @@
+@inproceedings{liao2023ar,
+  title={AR Interfaces for Disocclusion—A Comparative Study},
+  author={Liao, Shuqi and Zhou, Yuqi and Popescu, Voicu},
+  booktitle={2023 IEEE Conference Virtual Reality and 3D User Interfaces (VR)},
+  pages={530--540},
+  year={2023},
+  organization={IEEE}
+}

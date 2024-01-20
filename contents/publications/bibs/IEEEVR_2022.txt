@@ -1,0 +1,8 @@
+@inproceedings{zhou2022tapping,
+  title={Tapping with a handheld stick in vr: Redirection detection thresholds for passive haptic feedback},
+  author={Zhou, Yuqi and Popescu, Voicu},
+  booktitle={2022 IEEE Conference on Virtual Reality and 3D User Interfaces (VR)},
+  pages={83--92},
+  year={2022},
+  organization={IEEE}
+}
