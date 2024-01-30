@@ -39,15 +39,15 @@
             <h1>About me</h1>
   <div class="col-md-9">
       <p lang="en">
-          I am currently a PhD candidate at <a href="https://www.cs.purdue.edu/">Purdue University</a>, 
-          where I started my PhD program since 2021, advised by Professor <a href="https://www.cs.purdue.edu/homes/popescu/">Voicu Popescu</a>.
-          I am interested in XR research, especially VR haptics.
-          My take for the future VR haptics is an immersive world that enables the user to touch *anything* within their reach, a dream shown in
-          the movie <a href="https://en.wikipedia.org/wiki/Ready_Player_One_(film)">Ready Player One</a>.
-          For the first step, I designed and built the first prototype of Encountered-type Haptic Device (ETHD) last year in the form of a Cartesian robot.
-          I'm also a big fan of wearable haptic devices and will work on them in the future.
-          Other than VR haptics, I also have first-author publications in other XR fields, such as Cloud VR and collaborate AR. 
-          Here is my <a href="contents/resume_YuqiZhou.pdf">CV</a>.
+          I am currently a Computer Science PhD candidate at <a href="https://www.cs.purdue.edu/">Purdue University</a>, 
+          advised by Professor <a href="https://www.cs.purdue.edu/homes/popescu/">Voicu Popescu</a>.
+          I am interested in extended reality (XR), especially haptics for virtual reality (VR). My take on the future of VR haptics is 
+          an immersive world in which the user can touch any virtual object within their reach—a lot like in the 
+          <a href="https://en.wikipedia.org/wiki/Ready_Player_One_(film)">Ready Player One</a> movie. I have taken a first step in this 
+          direction: I designed and built an Encountered-Type Haptic Device (ETHD) in the form of a Cartesian robot. I am also a big fan 
+          of wearable haptic devices, on which I plan to work in the immediate future. Other than VR haptics, I am also interested in 
+          other XR fields, such as cloud VR and collaborative augmented reality (AR). Here is my 
+          <a href="contents/resume_YuqiZhou.pdf">CV</a>.
 </div>
   
   <div class="col-md-3">
@@ -57,19 +57,23 @@
   <div class="clearfix"></div>
   <hr>
   
-  <h1>Selected work</h1>
+  <h1>Research projects</h1>
   
   <!-- ETHD -->
-  <div class="col-md-4">
+  <div class="col-md-5">
       <a href="./images/ETHD.png" title="EHTD"><img src="images/ETHD.png" alt="ETHD design" class="img-responsive"></a>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-7">
       <h2><a href="https://github.com/youyutiancai/ETHD_Cartesian/tree/main">VR haptics with ETHD</a></h2>
       <p lang="en"> 
-        The first component of all-accessible system is a robot that serves as physical replica of stationary objects, especially those placed on stationary surfaces such as a table.
-        Without an ETHD, a wearable device that can simulate the tactile feedback cannot properly halt the user's hand. As a result, the user's hand will penetrate 
-        through the object.
-        I built this robot mainly for proving some of my thoughts and hypotheses. 
+        One can allow the user to touch any virtual object by building a high-fidelity physical replica of the virtual environment—but 
+        that is impractical. A better approach is to try to alleviate the differences between the virtual and the physical world. One 
+        option is to change the physical world to align it locally with the part of the virtual world with which the user is about to 
+        interact. For this I built an ETHD, a Cartesian robot that moves a physical object to align it with the virtual object the user 
+        is about to touch. Another option is to change the virtual world to align it with the physical world. I have developed physical 
+        and virtual redirection algorithms that cooperate to allow the user to touch stationary or dynamic virtual objects of varying 
+        shapes with perfect synchronization of the virtual and physical contacts. This provides the user with safe and believable haptic 
+        feedback. The image shows my ETHD providing haptic feedback to the user.
         <!--See the <a href="/publications">publications page</a> for more details.-->
       </p>
   </div>
@@ -80,15 +84,16 @@
   <div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
   <div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
   <!-- CloVR -->
-  <div class="col-md-4">
+  <div class="col-md-5">
       <a href="./images/CloVR.png" title="CloVR"><img src="images/CloVR.png" alt="CloVR" class="img-responsive"></a>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-7">
       <h2>CloVR: Fast-Startup Low-Latency Cloud VR</h2>
-      <p lang="en">Speaking of cloud gaming for VR, one can only think of the traditional way of reading the user's input and sending computed frames from the server to the user. 
-        This approach works for PC games, but the roundtrip latency can easily nauseate the user. 
-        We came up with a novel method that transfers part of the virtual environment from the server to the client and renders the rest as a cubemap. 
-        This approach can maintain complete visualization and fast startup features for a large-scale 3D scene, while the local rendering with high framerate does not make the user sick.
+      <p lang="en">We now have amazing self-contained XR headsets with on-board tracking, rendering, and display, delivering to the user 
+        completely untethered VR experiences. One challenge is to increase the complexity of the virtual environments that can be rendered
+        on these headsets. I am working on a distributed VR system, dubbed CloVR, which partitions the rendering load between the server 
+        and the client, shielding the client from the full complexity of the virtual environment. The images show how CloVR downloads a 
+        visually complete and functionally virtual environment much faster than a conventional download of visible objects.
       </p>
   </div>
 
@@ -102,13 +107,16 @@
   </div>
   <div class="col-md-7">
       <h2>Co-located AR Attention Guidance</h2>
-      <p lang="en">In this project, I developed a system for a "guide" to point out a real-world reference point to a "tourist" using tablets with cameras. 
-        The guide annotates the point, sent to the tourist's tablet, and guides them to the target with zoom. 
-        It outperforms conventional augmented reality in localization speed and provides directional guidance without relying on visual details in challenging scenes.
+      <p lang="en">Consider two collaborators, e.g., an instructor and a student, standing side-by-side, looking at the same 3D scene. 
+        I developed a method that allows the instructor to point out an element of the scene to the student using tablets or phones. 
+        The instructor circles the target on their display and a circle appears around the target on the student's display. Then the 
+        student's display turns transparent, i.e., the live video it shows grows similar to what the student would see if the display 
+        were actually made of glass. The transparent display gives to the student accurate directional guidance to the target, helping 
+        them find it with the naked eye. The image shows the transparent student display pointing to a window of the far away building.
       </p>
   </div>
 
-  <div class="clearfix"></div>
+  <!-- <div class="clearfix"></div>
   <div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
   <div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
   <div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div><div class="col-md-12"></div>
@@ -124,7 +132,7 @@
         that not only ensures the synchronized virtual and physical contact at the end, but also enables shape mapping with smooth transition. 
         That is, a physical object can provide haptic feedback for virtual objects in different shapes.
       </p>
-  </div>
+  </div> -->
   
   
           </div>
