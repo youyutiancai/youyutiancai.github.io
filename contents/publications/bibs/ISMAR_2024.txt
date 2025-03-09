@@ -1,0 +1,8 @@
+@inproceedings{zhou2024detectability,
+  title={Detectability of ETHD Position and Speed Redirection for VR Haptics},
+  author={Zhou, Yuqi and Popescu, Voicu},
+  booktitle={2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)},
+  pages={140--149},
+  year={2024},
+  organization={IEEE}
+}

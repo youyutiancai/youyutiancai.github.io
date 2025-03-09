@@ -1,0 +1,10 @@
+@article{zhou2023dynamic,
+  title={Dynamic Redirection for VR Haptics with a Handheld Stick},
+  author={Zhou, Yuqi and Popescu, Voicu},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  volume={29},
+  number={5},
+  pages={2753--2762},
+  year={2023},
+  publisher={IEEE}
+}
