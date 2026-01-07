@@ -1,0 +1,7 @@
+@article{zhou2025dynamic,
+  title={Dynamic Redirection for Safe Interaction with ETHD-Simulated Virtual Objects},
+  author={Zhou, Yuqi and Popescu, Voicu},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2025},
+  publisher={IEEE}
+}

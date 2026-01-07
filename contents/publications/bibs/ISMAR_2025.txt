@@ -1,0 +1,7 @@
+@article{liao2025effect,
+  title={The Effect of Realism on Hand Redirection in Immersive Environments},
+  author={Liao, Shuqi and Zhou, Yuqi and Popescu, Voicu},
+  journal={IEEE Transactions on Visualization and Computer Graphics},
+  year={2025},
+  publisher={IEEE}
+}
